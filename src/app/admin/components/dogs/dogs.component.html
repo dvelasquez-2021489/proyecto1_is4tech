@@ -1,0 +1,11 @@
+<p>{{ listdePerros.message }}</p>
+<div class="contenedor">
+  <img class="imagen-ajustada" src="{{ listdePerros.message }}" alt="" />
+  <button type="button" class="btn btn-secondary" (click)="call()">
+    Obtener una nueva imagen
+  </button>
+</div>
+<div>
+  <textarea [(ngModel)]="contenidoTextarea" appWhiteSpace></textarea>
+  <div class="recuadro">{{ contenidoTextarea }}</div>
+</div>
